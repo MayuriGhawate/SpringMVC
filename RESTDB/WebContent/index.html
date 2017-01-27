@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CRUD Operation</title>
+</head>
+<body>
+
+
+<h2>Total Inventory</h2>
+<p>Two new packages have been added (inventory and util).  Inventory will allow you to manage computer parts in the PC_PARTS table. 
+	In the util package, a ToJSON class has been added to convert database resultset into JSON array.
+</p>
+<p>
+	One API resources was created in part 4: <br />
+	<a href="http://localhost:8080/RESTDB/api/v1/inventory">http://localhost:8080/RESTDB/api/v1/inventory</a> - <em>This url will return all the rows PC_PARTS table.</em>
+</p>
+<hr>
+
+<h2>Inventory by brand </h2>
+
+<p>
+	Two of the API resources are for searching on the brand but but done differently:<br />
+	The first one is by @QueryParam:<br />
+	<a href="http://localhost:8080/RESTDB/api/v2/inventory?brand=nvidia">http://localhost:8080/RESTDB/api/v2/inventory?brand=nvidia</a> <br />
+	The second one is by @PathParam:<br />
+	<a href="http://localhost:8080/RESTDB/api/v2/inventory/nvidia">http://localhost:8080/RESTDB/api/v2/inventory/nvidia</a>
+	<br /><br />
+	
+	The third api resource search by brand and item number using @PathParam:<br />
+	<a href="http://localhost:8080/RESTDB/api/v2/inventory/nvidia/970">http://localhost:8080/RESTDB/api/v2/inventory/nvidia/970</a>
+</p>
+<hr>
+
+<h2>Posting to database</h2>
+<p>Introducing the POST method, we will be using POST to insert into the PC PARTS database table.  There is going to be two examples. One using data binding (object mapping)
+The other way (2) is the use JSONArrays and JSONObjects.  Both ways are valid, choose which one you want to go with.
+</p>
+<p>
+	In order to demo POST, I have created a simple web form with a POST ajax request. <br />
+	<a href="http://localhost:8080/RESTDB/post.html">POST web form</a>
+</p>
+<hr>
+
+<h2>Updating and Removing the Resource</h2>
+<p>
+	Click on the link for a demo of PUT, this web form will allow you to update the PC_PARTS_AVAIL number. <br />
+	<a href="http://localhost:8080/RESTDB/put.html">PUT web form</a>
+	<br /><br />
+	
+	The link below is a demo of DELETE, this web form will allow you to delete a row from PC PARTS table. <br />
+	<a href="http://localhost:8080/RESTDB/delete.html">DELETE web form</a>
+</p>
+
+<hr>
+
+ 
+
+
+</body>
+</html>

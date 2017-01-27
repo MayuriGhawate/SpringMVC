@@ -1,0 +1,16 @@
+package com.hospital.config.service;
+
+import java.util.List;
+
+import com.hospital.config.entities.Doctor;
+
+
+
+public interface DoctorService {
+	public List<Doctor> findAllDoctors();
+	public Doctor findby(int docid);
+	public void insertDoctor(Doctor doctor);
+	public void update(Doctor doctor);
+	public void delete(Doctor doctor);
+
+}

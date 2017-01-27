@@ -1,0 +1,5 @@
+package com.hospital.config.repository;
+
+public interface DoctorRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.hospital.config.entities;
+
+public class Doctor {
+
+}

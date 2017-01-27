@@ -1,0 +1,17 @@
+package com.hospital.config.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hospital.config.entities.Doctor;
+
+@RestController
+public class DoctorController {
+	
+	@Autowired
+	Doctor doctor;
+	
+	
+	
+
+}

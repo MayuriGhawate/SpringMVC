@@ -1,0 +1,6 @@
+package com.hospital.config.controller;
+
+public class DoctorController {
+	
+
+}
